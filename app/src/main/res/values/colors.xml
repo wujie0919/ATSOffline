@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="bgcolor">#f4f4f4</color>
+
+    <!-- 标题 -->
+    <color name="titlebar_background">#13bb86</color>
+    <!-- 左菜单 -->
+    <!-- 分割线 -->
+    <color name="sp_line">#ced2d6</color>
+    <color name="leftmenu_item_lable">#585858</color>
+    <!-- 左菜单 -->
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#dcdbdc</color>
+    <color name="blue">#24b8d2</color>
+
+    <color name="transparent">#00000000</color>
+
+
+    <drawable name="transparent_drawable">#00000000</drawable>
+
+</resources>

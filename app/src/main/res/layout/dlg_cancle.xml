@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_becausetype"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:background="@color/titlebar_background"
+        android:gravity="center"
+        android:text="取消原因"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_txt" />
+
+    <RelativeLayout
+        android:id="@+id/rl_locationon"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/dialog_gavecarbutton"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_locationon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="车位被占用"
+            android:textColor="@drawable/dialog_gavecarbutton_txt_check"
+            android:textSize="@dimen/textsize_28px" />
+
+        <View
+            android:id="@+id/v_locationon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/dialog_gavecar_selector"
+            android:visibility="visible"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_chargingon"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/dialog_gavecarbutton"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_chargingon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="充电枪被占用"
+            android:textColor="@drawable/dialog_gavecarbutton_txt_check"
+            android:textSize="@dimen/textsize_28px" />
+
+        <View
+            android:id="@+id/v_chargingon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/dialog_gavecar_selector"
+            android:visibility="visible"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_chargingbad"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/dialog_gavecarbutton"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_chargingbad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="充电枪损坏"
+            android:textColor="@drawable/dialog_gavecarbutton_txt_check"
+            android:textSize="@dimen/textsize_28px" />
+
+        <View
+            android:id="@+id/v_chargingbad"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/dialog_gavecar_selector"
+            android:visibility="visible"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_electriclow"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/dialog_gavecarbutton"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_electriclow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="车辆电量低于30%"
+            android:textColor="@drawable/dialog_gavecarbutton_txt_check"
+            android:textSize="@dimen/textsize_28px" />
+
+        <View
+            android:id="@+id/v_electriclow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/dialog_gavecar_selector"
+            android:visibility="visible"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_carpeoplequestion"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/dialog_gavecarbutton"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_carpeoplequestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="发现车辆问题，需与用户确认"
+            android:textColor="@drawable/dialog_gavecarbutton_txt_check"
+            android:textSize="@dimen/textsize_28px" />
+
+        <View
+            android:id="@+id/v_carpeoplequestion"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/dialog_gavecar_selector"
+            android:visibility="visible"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_carquestion"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/dialog_gavecarbutton"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_carquestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="车辆故障需维修"
+            android:textColor="@drawable/dialog_gavecarbutton_txt_check"
+            android:textSize="@dimen/textsize_28px" />
+
+        <View
+            android:id="@+id/v_carquestion"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/dialog_gavecar_selector"
+            android:visibility="visible"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_otherquestion"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/dialog_gavecarbutton"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_otherquestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="其他"
+            android:textColor="@drawable/dialog_gavecarbutton_txt_check"
+            android:textSize="@dimen/textsize_28px" />
+
+        <View
+            android:id="@+id/v_otherquestion"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/dialog_gavecar_selector"
+            android:visibility="visible"></View>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edt_questiontxt"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/dialog_backbutton_nor"
+        android:gravity="top"
+        android:hint="请输入未上线原因(选填)"
+        android:padding="5dp"
+        android:textColor="#575757"
+        android:textColorHint="#99999999"
+        android:textSize="@dimen/textsize_26px"></EditText>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="121dp"
+            android:layout_height="39dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/dialog_backbutton_nor"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="#666666"
+            android:textSize="@dimen/textsize_32px" />
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="121dp"
+            android:layout_height="39dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/dialog_gavecarbutton_pre"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/textsize_32px" />
+    </RelativeLayout>
+</LinearLayout>

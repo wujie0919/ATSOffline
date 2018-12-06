@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="25dip"
+        android:paddingRight="25dip">
+
+
+        <TextView
+            android:id="@+id/item_memberlist_name"
+            android:layout_width="80dip"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:text="张三"
+            android:textColor="@color/titlebar_background"
+            android:textSize="@dimen/textsize_26px" />
+
+        <TextView
+            android:id="@+id/item_memberlist_state"
+            android:layout_width="80dip"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/item_memberlist_name"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dip"
+            android:text="空闲中"
+            android:textColor="#555555"
+            android:textSize="@dimen/textsize_26px" />
+
+
+        <ImageView
+            android:id="@+id/item_memberlist_location"
+            android:layout_width="100dip"
+            android:layout_height="30dip"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/item_memberlist_assign"
+            android:src="@drawable/icon_location" />
+
+        <TextView
+            android:id="@+id/item_memberlist_assign"
+            android:layout_width="82dip"
+            android:layout_height="28dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/assign_button_bg"
+            android:gravity="center"
+            android:text="派单"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dip"
+        android:background="#d1d5d9" />
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="25dip"
+    android:paddingRight="25dip">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_check_name"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="车辆钥匙:"
+            android:textColor="@color/titlebar_background"
+            android:textSize="@dimen/textsize_30px" />
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/item_check_radio1"
+                style="@style/yycheckradio0"
+                android:layout_width="wrap_content"
+                android:layout_height="24dip"
+                android:text="  无问题"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_29px" />
+
+            <RadioButton
+                android:id="@+id/item_check_radio2"
+                style="@style/yycheckradio1"
+                android:layout_width="wrap_content"
+                android:layout_height="24dip"
+                android:layout_marginLeft="30dip"
+                android:layout_marginRight="10dip"
+                android:text="  有问题"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_29px" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/item_check_image_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:id="@+id/item_check_image_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <EditText
+            android:id="@+id/item_check_message_et"
+            android:layout_width="match_parent"
+            android:layout_height="95dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/check_edit_bg"
+            android:gravity="top|left"
+            android:hint="输入备用信息"
+            android:maxLength="100"
+            android:maxLines="6"
+            android:paddingBottom="10dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="10dip"
+            android:textColor="#36393b"
+            android:textSize="@dimen/textsize_27px" />
+
+    </LinearLayout>
+</LinearLayout>

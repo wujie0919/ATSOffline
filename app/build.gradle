@@ -1,0 +1,85 @@
+//import static com.sun.media.sound.Printer.release
+
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        release {
+            storeFile file('/Users/Aaron/Desktop/Zwx_pro/AndroidPro/zwx_release.keystore')
+            storePassword 'zwxdf2018'
+            keyAlias 'zwx'
+            keyPassword 'zwxdf2018'
+        }
+        debug {
+            storeFile file('/Users/Aaron/Desktop/Zwx_pro/AndroidPro/zwx_debug.keystore')
+            storePassword 'zwx2018'
+            keyAlias 'zwxdf'
+            keyPassword 'zwx2018'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        applicationId "df.zwx.com.zwxdf"
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionCode 15
+        versionName "2.9.4"
+    }
+
+    buildTypes {
+//        release {
+//
+//            //   开启混淆
+//            minifyEnabled false
+//            // 移除无用的resource文件
+//            shrinkResources true
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+//            signingConfig signingConfigs.release
+//
+//            manifestPlaceholders = [BASEIP: "http://47.92.137.201:8090/yydfserver-controller-1.0/", uploadImageDirectory: "sfyz/difu/img/uid_"]
+//        }
+        debug {
+//            signingConfig signingConfigs.release
+
+            /**
+             * 正式地址
+             */
+//            manifestPlaceholders = [BASEIP: "http://difu.yiyizuche.cn/", uploadImageDirectory: "difu/img/uid_"]
+
+            /**
+             * 测试地址
+             */
+            manifestPlaceholders = [BASEIP: "http://192.168.124.3:8081/zwxdf/", uploadImageDirectory: "difu_test/img/uid_"]
+//            manifestPlaceholders = [BASEIP: "http://47.92.137.201:8090/yydfserver-controller-1.0/", uploadImageDirectory: "sfyz/difu_test/img/uid_"]
+        }
+    }
+
+//    dexOptions {
+//        incremental true
+//    }
+//    project.configurations.all {
+//        resolutionStrategy.eachDependency { details ->
+//            if (details.requested.group == 'com.android.support'
+//                    && !details.requested.name.contains('multidex') ) {
+//                details.useVersion "27.0.0"
+//            }
+//            if(details.requested.name.contains("multidex")){
+//                details.useVersion "1.0.1"
+//            }
+//        }
+//    }
+}
+
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: '*.jar')
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:25.4.0'
+//    compile 'com.pgyersdk:sdk:2.8.1'
+    implementation project(':library')
+//    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.3'
+//    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.3'
+}

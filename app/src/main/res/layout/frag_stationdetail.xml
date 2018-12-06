@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor">
+
+    <include
+        android:id="@+id/rl_title"
+        layout="@layout/title_lay" />
+
+    <RelativeLayout
+        android:id="@+id/rl_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_title"
+        android:background="@color/white"
+        android:paddingBottom="20dp"
+        android:paddingLeft="17dip"
+        android:paddingRight="17dip"
+        android:paddingTop="20dp">
+
+        <ImageButton
+            android:id="@+id/stationorn_add0"
+            android:layout_width="83dip"
+            android:layout_height="83dip"
+            android:layout_below="@+id/tab0"
+            android:background="@drawable/check_edit_bg"
+            android:padding="1dip"
+            android:scaleType="centerCrop" />
+
+        <ImageButton
+            android:id="@+id/stationorn_add1"
+            android:layout_width="83dip"
+            android:layout_height="83dip"
+            android:layout_below="@+id/tab0"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/check_edit_bg"
+            android:padding="1dip"
+            android:scaleType="centerCrop" />
+
+        <ImageButton
+            android:id="@+id/stationorn_add2"
+            android:layout_width="83dip"
+            android:layout_height="83dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tab0"
+            android:background="@drawable/check_edit_bg"
+            android:padding="1dip"
+            android:scaleType="centerCrop" />
+
+        <ImageButton
+            android:id="@+id/stationorn_add3"
+            android:layout_width="83dip"
+            android:layout_height="83dip"
+            android:layout_below="@+id/stationorn_add0"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/check_edit_bg"
+            android:padding="1dip"
+            android:scaleType="centerCrop" />
+
+        <ImageButton
+            android:id="@+id/stationorn_add4"
+            android:layout_width="83dip"
+            android:layout_height="83dip"
+            android:layout_below="@+id/stationorn_add0"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/check_edit_bg"
+            android:padding="1dip"
+            android:scaleType="centerCrop" />
+
+        <ImageButton
+            android:id="@+id/stationorn_add5"
+            android:layout_width="83dip"
+            android:layout_height="83dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/stationorn_add0"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/check_edit_bg"
+            android:padding="1dip"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/check_submit"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_below="@+id/rl_lay"
+        android:layout_marginLeft="25dip"
+        android:layout_marginRight="25dip"
+        android:layout_marginTop="60dip"
+        android:background="@drawable/dialog_gavecarbutton_pre"
+        android:gravity="center"
+        android:text="更新照片"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_order_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dip"
+        android:background="@drawable/item_order_layout_bg"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="14dip"
+        android:paddingRight="14dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/tv_stationname"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="先锋金融大厦租赁站"
+                android:textColor="#11bc85"
+                android:textSize="@dimen/textsize_29px" />
+
+            <ImageView
+                android:id="@+id/iv_problem"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/stationproblem_selector" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/dash_line" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dip"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_free_parcking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="空闲车位：-"
+                android:textColor="#505b60"
+                android:textSize="@dimen/textsize_26px" />
+
+            <TextView
+                android:id="@+id/item_order_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="距离 3330m"
+                android:textColor="#0572ff"
+                android:textSize="@dimen/textsize_26px" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_order_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取车地点：北京市朝阳区"
+                android:textColor="#505b60"
+                android:textSize="@dimen/textsize_26px" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_peoplenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="18位用户预约用车" />
+    </LinearLayout>
+
+
+</LinearLayout>

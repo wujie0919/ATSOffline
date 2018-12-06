@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="38dip"
+        android:layout_height="44.5dip"
+        android:background="@drawable/item_car_bg_style">
+
+        <View
+            android:layout_width="22.5dip"
+            android:layout_height="10.5dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dip"
+            android:background="@drawable/item_car_car_style" />
+
+
+        <View
+            android:layout_width="6dip"
+            android:layout_height="9dip"
+            android:layout_marginLeft="6dip"
+            android:layout_marginTop="6dip"
+            android:background="@drawable/item_car_energy_style" />
+
+
+        <TextView
+            android:id="@+id/item_car_energy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dip"
+            android:layout_marginTop="5dip"
+            android:text="80%"
+            android:textColor="@color/item_car_energy_text_style"
+            android:textSize="@dimen/textsize_16px" />
+
+    </RelativeLayout>
+</RelativeLayout>

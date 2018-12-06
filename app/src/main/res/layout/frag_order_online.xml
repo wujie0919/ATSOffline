@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/rl_title"
+        layout="@layout/title_lay" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="35dip"
+                android:paddingLeft="26dip"
+                android:paddingRight="26dip"
+                android:paddingTop="15dip">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_order_online_car_license"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="车牌号码："
+                        android:textColor="@color/titlebar_background"
+                        android:textSize="@dimen/textsize_26px" />
+
+                    <TextView
+                        android:id="@+id/order_online_car_license"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tv_order_online_car_license"
+                        android:text=""
+                        android:textColor="#505b60"
+                        android:textSize="@dimen/textsize_26px" />
+
+                    <TextView
+                        android:id="@+id/tv_cancleorder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/cancelorder"
+                        android:textColor="#0087ff"
+                        android:textSize="@dimen/textsize_26px" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="车辆电量："
+                        android:textColor="@color/titlebar_background"
+                        android:textSize="@dimen/textsize_26px" />
+
+                    <TextView
+                        android:id="@+id/order_online_energy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#505b60"
+                        android:textSize="@dimen/textsize_26px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="接车地服："
+                        android:textColor="@color/titlebar_background"
+                        android:textSize="@dimen/textsize_26px" />
+
+                    <TextView
+                        android:id="@+id/order_online_person_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#505b60"
+                        android:textSize="@dimen/textsize_26px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="地服手机："
+                        android:textColor="@color/titlebar_background"
+                        android:textSize="@dimen/textsize_26px" />
+
+                    <TextView
+                        android:id="@+id/order_online_person_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#505b60"
+                        android:textSize="@dimen/textsize_26px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dip"
+                    android:gravity="top"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="所属站点："
+                        android:textColor="@color/titlebar_background"
+                        android:textSize="@dimen/textsize_26px" />
+
+                    <TextView
+                        android:id="@+id/order_online_station_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#505b60"
+                        android:textSize="@dimen/textsize_26px" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#cfd2d2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/order_line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="50dip"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:id="@+id/order_online_opendoorlayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dip"
+                            android:layout_height="60dip"
+                            android:background="@drawable/order_open_bg" />
+
+                        <TextView
+                            android:id="@+id/order_opendoor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dip"
+                            android:text="开门"
+                            android:textColor="#565656"
+                            android:textSize="@dimen/textsize_30px" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="2" />
+
+                    <LinearLayout
+                        android:id="@+id/order_online_closedoorlayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dip"
+                            android:layout_height="60dip"
+                            android:background="@drawable/order_close_bg" />
+
+                        <TextView
+                            android:id="@+id/order_closedoor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dip"
+                            android:text="关门"
+                            android:textColor="#565656"
+                            android:textSize="@dimen/textsize_30px" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/order_line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/order_line1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="30dip"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:id="@+id/order_online_warncarlayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dip"
+                            android:layout_height="60dip"
+                            android:background="@drawable/order_warn_bg" />
+
+                        <TextView
+                            android:id="@+id/order_warncar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dip"
+                            android:text="鸣笛"
+                            android:textColor="#565656"
+                            android:textSize="@dimen/textsize_30px" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="2" />
+
+                    <LinearLayout
+                        android:id="@+id/order_online_locationcarlayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dip"
+                            android:layout_height="60dip"
+                            android:background="@drawable/order_location_bg" />
+
+                        <TextView
+                            android:id="@+id/order_locationcar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dip"
+                            android:text="导航"
+                            android:textColor="#565656"
+                            android:textSize="@dimen/textsize_30px" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/order_online_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dip"
+                    android:layout_marginLeft="26dip"
+                    android:layout_marginRight="26dip"
+                    android:layout_marginTop="30dip"
+                    android:background="@drawable/cardetail_sure_button"
+                    android:gravity="center"
+                    android:text="完成订单"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+</LinearLayout>

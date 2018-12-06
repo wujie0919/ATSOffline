@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_lay"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_danjiatxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="单价："
+            android:textColor="#525b63"
+            android:textSize="@dimen/textsize_34px" />
+
+        <EditText
+            android:id="@+id/et_money"
+            android:layout_width="72dp"
+            android:layout_height="37dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_danjiatxt"
+            android:background="@drawable/dialog_gavecarbutton_nor"
+            android:gravity="center"
+            android:numeric="decimal"
+            android:textColor="#575757"
+            android:textSize="@dimen/textsize_30px" />
+
+        <TextView
+            android:id="@+id/tv_yuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/et_money"
+            android:gravity="center"
+            android:text="  元 /  "
+            android:textColor="#575757"
+            android:textSize="@dimen/textsize_30px" />
+
+        <TextView
+            android:id="@+id/tv_hour"
+            android:layout_width="72dp"
+            android:layout_height="37dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:layout_toRightOf="@+id/tv_yuan"
+            android:background="@drawable/price_button"
+            android:gravity="center"
+            android:text="每小时"
+
+            android:textColor="@drawable/dialog_gavecarbutton_txt_check"
+            android:textSize="@dimen/textsize_30px" />
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="72dp"
+            android:layout_height="37dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:layout_toRightOf="@+id/tv_hour"
+            android:background="@drawable/price_button"
+            android:gravity="center"
+            android:text="每天"
+            android:textColor="@drawable/dialog_gavecarbutton_txt_check"
+            android:textSize="@dimen/textsize_30px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_parktimetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="停车时长："
+            android:textColor="#525b63"
+            android:textSize="@dimen/textsize_34px" />
+
+        <EditText
+            android:id="@+id/et_hour"
+            android:layout_width="100dp"
+            android:layout_height="37dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_parktimetxt"
+            android:background="@drawable/dialog_gavecarbutton_nor"
+            android:gravity="center"
+            android:numeric="decimal"
+            android:textColor="#575757"
+            android:textSize="@dimen/textsize_30px" />
+
+        <TextView
+            android:id="@+id/tv_hourtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/et_hour"
+            android:gravity="center"
+            android:text="小时"
+            android:textColor="#575757"
+            android:textSize="@dimen/textsize_30px" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_gavefeetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="实际付费："
+            android:textColor="#525b63"
+            android:textSize="@dimen/textsize_34px" />
+
+        <EditText
+            android:id="@+id/et_gavefee"
+            android:layout_width="100dp"
+            android:layout_height="37dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_gavefeetxt"
+            android:background="@drawable/dialog_gavecarbutton_nor"
+            android:gravity="center"
+            android:numeric="decimal"
+            android:textColor="#575757"
+            android:textSize="@dimen/textsize_30px" />
+
+        <TextView
+            android:id="@+id/tv_feetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/et_gavefee"
+            android:gravity="center"
+            android:text="元"
+            android:textColor="#575757"
+            android:textSize="@dimen/textsize_30px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_provetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="22dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="22dp"
+            android:text="实际凭证："
+            android:textColor="#525b63"
+            android:textSize="@dimen/textsize_34px" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_provetxt"
+            android:layout_marginBottom="22dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_one"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+
+                android:background="@drawable/addpic" />
+
+            <ImageView
+                android:id="@+id/iv_two"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/addpic" />
+
+            <ImageView
+                android:id="@+id/iv_three"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/addpic" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/dialog_gavecarbutton_pre"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_30px" />
+</LinearLayout>

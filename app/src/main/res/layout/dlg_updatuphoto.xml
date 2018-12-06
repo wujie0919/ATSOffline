@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/updatuphoto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:text="提示"
+        android:textColor="#333333"
+        android:textSize="@dimen/textsize_36px" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="更新照片会删除现有的所有照片\n确认更新？"
+        android:textColor="#333333"
+        android:textSize="@dimen/textsize_36px" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@drawable/dialog_gavecarbutton"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@drawable/dialog_gavecarbutton_txt_check"
+            android:textSize="@dimen/textsize_30px" />
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/dialog_gavecarbutton"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@drawable/dialog_gavecarbutton_txt_check"
+            android:textSize="@dimen/textsize_30px" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor">
+
+
+    <include
+        android:id="@+id/rl_title"
+        layout="@layout/title_lay" />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rl_title"
+        android:clickable="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottomlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="25dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_orderstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="接车订单"
+                android:textColor="#fd4400"
+                android:textSize="@dimen/textsize_30px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text=""
+                android:textColor="#1092ff"
+                android:textSize="@dimen/textsize_30px" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/dash_line" />
+
+        <TextView
+            android:id="@+id/txt_carlicense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="车牌号码"
+            android:textColor="#515c61"
+            android:textSize="@dimen/textsize_30px" />
+
+        <TextView
+            android:id="@+id/txt_cardistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="接车距离"
+            android:textColor="#515c61"
+            android:textSize="@dimen/textsize_30px" />
+
+
+        <TextView
+            android:id="@+id/txt_carelectric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="车辆电量"
+            android:textColor="#515c61"
+            android:textSize="@dimen/textsize_30px" />
+
+        <TextView
+            android:id="@+id/txt_carlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="接车位置"
+            android:textColor="#515c61"
+            android:textSize="@dimen/textsize_30px" />
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/cardetail_sure_button"
+            android:gravity="center"
+            android:text="确认接单"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_30px" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_notcomplete"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/rl_title"
+        android:background="#f5ad60"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_notcompletenumb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="您有2个未完成订单！"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_28px"/>
+
+        <ImageView
+            android:id="@+id/iv_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:padding="5dp"
+            android:src="@drawable/cancle" />
+    </RelativeLayout>
+</RelativeLayout>

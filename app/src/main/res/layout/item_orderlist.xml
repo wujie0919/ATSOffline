@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_itemorderbody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp">
+
+            <TextView
+                android:id="@+id/tv_ordertype"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="17dp"
+                android:gravity="center"
+                android:text="整备订单"
+                android:textColor="#585b63"
+                android:textSize="@dimen/textsize_34px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_orderid"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/tv_ordertype"
+                android:gravity="center"
+                android:text="2236"
+                android:textColor="#585b63"
+                android:textSize="@dimen/textsize_30px" />
+
+            <TextView
+                android:id="@+id/tv_iscomplete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="17dp"
+                android:gravity="center"
+                android:text="2236"
+                android:textColor="#585b63"
+                android:textSize="@dimen/textsize_34px" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bgcolor"></View>
+
+        <TextView
+            android:id="@+id/tv_addtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="13dp"
+            android:text="添加时间：2016-08-21  14：14：14"
+            android:textColor="#585b63"
+            android:textSize="@dimen/textsize_30px" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_carnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:text="车牌号码:京Q23423"
+                android:textColor="#585b63"
+                android:textSize="@dimen/textsize_30px" />
+
+            <TextView
+                android:id="@+id/tv_cardistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="17dp"
+                android:text="300m"
+                android:textColor="#0072ff"
+                android:textSize="@dimen/textsize_30px" />
+
+            <TextView
+                android:id="@+id/cardistance_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_cardistance"
+                android:text="距离："
+                android:textColor="#585b63"
+                android:textSize="@dimen/textsize_30px" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_getcarplace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:text="取车地点：北京朝阳区酒仙桥中路案发斯蒂芬案的说法"
+            android:textColor="#585b63"
+            android:textSize="@dimen/textsize_30px" />
+
+        <TextView
+            android:id="@+id/tv_reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:text="未上线原因：北京朝阳区酒仙桥中路案发斯蒂芬案的说法"
+            android:textColor="#585b63"
+            android:textSize="@dimen/textsize_30px"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_marginTop="13dp"
+            android:background="@color/bgcolor"></View>
+    </LinearLayout>
+</LinearLayout>
