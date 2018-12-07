@@ -1,5 +1,6 @@
 package df.yyzc.com.yydf.ui;
 
+import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
@@ -11,6 +12,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.FrameLayout;
 
+import android.widget.Toast;
 import com.baidu.location.BDLocation;
 import com.lidroid.xutils.exception.HttpException;
 import com.lidroid.xutils.http.RequestParams;
@@ -37,6 +39,8 @@ import df.yyzc.com.yydf.tools.LG;
 import df.yyzc.com.yydf.tools.MyUtils;
 import df.yyzc.com.yydf.tools.NetHelper;
 import df.yyzc.com.yydf.tools.YYRunner;
+import pub.devrel.easypermissions.EasyPermissions;
+
 
 public class MainActivity extends YYDFBaseActivity implements DrawerSlideHoldInterface, YYDFApp.OnGetLocationlistener, PublicRequestInterface {
     private long exitTime = 0;
@@ -100,8 +104,10 @@ public class MainActivity extends YYDFBaseActivity implements DrawerSlideHoldInt
         initView();
         requestLocationData(true, car_license);
         PgyUpdateManager.register(this);
-    }
 
+
+        locationToast();
+    }
 
     @Override
     protected void onResume() {
@@ -356,6 +362,34 @@ public class MainActivity extends YYDFBaseActivity implements DrawerSlideHoldInt
 
     public List<Order> getData() {
         return dataBeanList;
+    }
+
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        // Forward results to EasyPermissions
+        //将结果传入EasyPermissions中
+        EasyPermissions.onRequestPermissionsResult(requestCode, permissions, grantResults, this);
+    }
+
+    private boolean hasCameraPermission() {
+        return EasyPermissions.hasPermissions(this, Manifest.permission.CAMERA);
+    }
+
+    public void locationToast() {
+        if (hasCameraPermission()) {
+            // Have permission, do the thing!
+            Toast.makeText(this, "TODO: Camera things", Toast.LENGTH_LONG).show();
+        } else {
+            // Ask for one permission
+            EasyPermissions.requestPermissions(
+                    this,
+                    "申请权限   ",
+                    0,
+                    Manifest.permission.ACCESS_FINE_LOCATION);
+        }
     }
 
 }

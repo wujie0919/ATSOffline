@@ -3,9 +3,6 @@ apply plugin: 'com.android.library'
 dependencies {
     implementation fileTree(include: '*.jar', dir: 'libs')
     api files('libs/gson-2.3.1.jar')
-    implementation 'pub.devrel:easypermissions:2.0.0' {
-        exclude group:'com.android.support'
-    }
 }
 
 
