@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/Aaron/Desktop/Zwx_pro/AndroidPro/ATSOffline/ATSOffline/library/src/main/shaders"/></dataSet><dataSet config="debug"><source path="/Users/Aaron/Desktop/Zwx_pro/AndroidPro/ATSOffline/ATSOffline/library/build-types/debug/shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Users/tim/WS_Git/ATSOffline/library/src/main/shaders"/></dataSet><dataSet config="debug"><source path="/Users/tim/WS_Git/ATSOffline/library/build-types/debug/shaders"/></dataSet></merger>
