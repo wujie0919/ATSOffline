@@ -5,13 +5,13 @@ apply plugin: 'com.android.application'
 android {
     signingConfigs {
         release {
-            storeFile file('/Users/Aaron/Desktop/Zwx_pro/AndroidPro/zwx_release.keystore')
+            storeFile file('../zwx_release.keystore')
             storePassword 'zwxdf2018'
             keyAlias 'zwx'
             keyPassword 'zwxdf2018'
         }
         debug {
-            storeFile file('/Users/Aaron/Desktop/Zwx_pro/AndroidPro/zwx_debug.keystore')
+            storeFile file('../zwx_debug.keystore')
             storePassword 'zwx2018'
             keyAlias 'zwxdf'
             keyPassword 'zwx2018'

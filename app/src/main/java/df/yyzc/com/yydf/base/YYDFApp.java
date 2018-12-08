@@ -47,11 +47,11 @@ import df.yyzc.com.yydf.tools.DevMountInfo;
  */
 public class YYDFApp extends Application {
     public static LocationClient mLocationClient;
-//    public static double Longitude = 116.4977040000;
+    //    public static double Longitude = 116.4977040000;
 //    public static double Latitude = 39.9713500000;
     public static double Longitude = 115.48715;
     public static double Latitude = 38.86837;
-//////    Longitude = 115.48715;
+    //////    Longitude = 115.48715;
 //////    Latitude = 38.86837;
     public static String LocaAdrrName = "保定市火车站";
     private static OnGetLocationlistener onGetLocationlistener;
