@@ -11,7 +11,6 @@ import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.widget.DrawerLayout;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
@@ -258,9 +257,7 @@ public class MainActivity extends YYDFBaseActivity implements DrawerSlideHoldInt
 
     @Override
     public void getBdlocation(BDLocation location) {
-        Log.e("===","=="+location.getLocType() + "==" + location.getLocTypeDescription());
         if (location != null) {
-                Log.e("===","=="+ location.getAddress().address);
             if (location.getLocType() == BDLocation.TypeNetWorkLocation
                     || location.getLocType() == BDLocation.TypeOffLineLocation
                     || location.getLocType() == BDLocation.TypeGpsLocation) {
